@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Blog documentar</title>
+    <link rel="icon" type="v_logo" href="imagini.html/v_logo.png" />
     <link rel="stylesheet" href="index_style.css" />
   </head>
   <body>
@@ -9,62 +10,80 @@
       <a href="index.html">
         <img src="imagini.html/v_logo.png" alt="Logo" class="logo" />
       </a>
-
-      <form class="search-form">
-        <input type="search" class="input-search" name="input-search" placeholder="Cautare" />
-        <button type="submit" class="search-button">Caută</button>
-      </form>
-      
+      <aside>
+        <form class="search-form">
+          <input
+            type="search"
+            class="input-search"
+            name="input-search"
+            placeholder="Cautare" />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </aside>
       <nav>
         <ul>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Epoca Victoriană</a>
-            <div class="dropdown-content"></div>
-          <li><a href="acasa.html">Acasă</a></li>
+          <li><a href="index.html">Acasă</a></li>
           <li><a href="despre.html">Despre noi</a></li>
-          <li><a href="contact.html">Contact</a></li>
           <li><a href="istorie.html">Istorie</a></li>
           <li><a href="arhitectura.html">Arhitectură</a></li>
           <li><a href="stil.html">Stil</a></li>
         </ul>
       </nav>
     </header>
-    
     <main>
-      <div class="bunvenit-wrapper">
-        <h1 class="bunvenit-title row">Bine ați venit!</h1>
-        <div class="p-bunvenit">
+      <div class="hero">
+        <div class="hero-slide" id="slide1">
+          <img src="imagini.html/slide1.jpeg" alt="Imagine 1" />
+        </div>
+        <div class="hero-slide" id="slide2">
+          <img src="imagini.html/slide2.jpeg" alt="Imagine 2" />
+        </div>
+        <div class="hero-slide" id="slide3">
+          <img src="imagini.html/slide3.jpeg" alt="Imagine 3" />
+        </div>
+      </div>
+
       <article>
-        <h2>Titlu articol</h2>
-        <p>Acesta este primul meu articol pentru blogul documentar.</p>
+        <h2>
+          <a href="stil.html">Analiza costumului istoric în stil Victorian</a>
+        </h2>
+        <p>
+          Perioada Victoriană desemnează anii de cârmuire în Marea Britanie a
+          reginei Victoria (1839-1901) şi coincide cu perioada Romantismului.
+          Regina Victoria a avut cea mai lungă domnire în istoria monarhiei
+          Britanice, marcată de reforme semnificative culturale, politice,
+          economice, industriale şi ştiinţifice. De asemenea, au avut loc
+          schimbări importante şi în viaţa socială a ţării, printre care se
+          includ o serie de reforme legate de drepturile femeilor.
+        </p>
+        <a href="stil.html">Citeste mai mult</a>
       </article>
 
       <article>
-        <h2>Titlu articol</h2>
-        <p>Acesta este al doilea meu articol pentru blogul documentar.</p>
-      </article>
-      <article>
-        <h2>Istoria epocii victoriene</h2>
-        <p>...</p>
+        <h2><a href="#articol2">Titlul articolului 2</a></h2>
+        <p>Descrierea scurtă a articolului 2.</p>
+        <a href="#articol2">Citeste mai mult</a>
       </article>
 
-      <article>
-        <h2>Arhitectura în perioada victoriană</h2>
-        <p>...</p>
+      <!-- Continuare cu alte articole -->
+
+      <article id="articol1">
+        <h2>Titlul articolului 1</h2>
+        <p>Continutul articolului 1.</p>
       </article>
 
-      <article>
-        <h2>Stilul victorian</h2>
-        <p>...</p>
+      <article id="articol2">
+        <h2>Titlul articolului 2</h2>
+        <p>Continutul articolului 2.</p>
       </article>
     </main>
 
     <aside>
       <h3>Categorii</h3>
       <ul>
-        <li><a href="#">Istorie</a></li>
-        <li><a href="#">Arte vizuale</a></li>
-        <li><a href="#">Știință și tehnologie</a></li>
+        <li><a href="istorie.html">Istorie</a></li>
+        <li><a href="stil.html">Arte vizuale</a></li>
+        <li><a href="arhitectura.html">Știință și tehnologie</a></li>
       </ul>
     </aside>
 
@@ -72,7 +91,7 @@
       <a href="index.html">
         <img src="imagini.html/v_logo.png" alt="Logo" class="logo" />
       </a>
-      <p>© 2023 Victorian</p>
+      <p>© 2023 Alexandra Sasu</p>
     </footer>
   </body>
 </html>
