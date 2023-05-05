@@ -15,12 +15,41 @@ body {
   height: 100vh;
 }
 main {
-  column-count: 2;
-  column-gap: 30px; /* spațiu între coloane */
+  max-width: 3000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+a[href] {
+  color: rgb(124, 121, 121);
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px 50px 75px;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 20px 0;
 }
 
 article {
-  break-inside: avoid; /* asigură că un articol nu este tăiat între coloane */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+article {
+  break-inside: avoid; /* articol nu este tăiat între coloane */
 }
 
 .text {
@@ -111,6 +140,7 @@ article {
 header {
   background-color: #c5a95b;
   color: #fff;
+  width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -125,10 +155,6 @@ header {
 .logo {
   max-width: 30%;
   height: auto;
-}
-
-header:hover {
-  background-image: url("background.jpg");
 }
 
 header h1 {
@@ -195,7 +221,8 @@ article p {
 
 /* Stilizare bară laterală */
 aside {
-  width: 30%;
+  width: 100%;
+  margin: 0;
   padding: 20px;
   background-color: rgb(144, 160, 135);
   background: radial-gradient(
@@ -222,7 +249,7 @@ aside li {
 }
 
 aside a {
-  color: #333;
+  color: #090909;
   text-decoration: none;
 }
 
@@ -257,6 +284,7 @@ aside a {
 footer {
   background-color: #333;
   color: #fff;
+  width: 100%;
   text-align: center;
   padding: 20px;
 }

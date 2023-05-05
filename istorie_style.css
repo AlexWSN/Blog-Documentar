@@ -12,6 +12,7 @@ header {
   background-color: #c5a95b;
   color: #fff;
   padding: 20px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,6 +135,11 @@ aside a {
 footer {
   background-color: #333;
   color: #fff;
+  width: 100%;
   text-align: center;
   padding: 20px;
+}
+.logo {
+  max-width: 30%;
+  height: auto;
 }

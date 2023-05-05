@@ -26,20 +26,27 @@ header:hover {
   background-image: url("background.jpg");
 }
 
-
-
-aside {
-  width: 100%;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: justify;
 }
 
+aside a {
+  color: #090909;
+  text-decoration: none;
+  width: 1000%;
+}
 
 footer {
-background-color: #333;
-color: #fff;
-text-align: center;
-padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
 }
 .logo {
-max-width: 30%;
-height: auto;
+  max-width: 30%;
+  height: auto;
 }
